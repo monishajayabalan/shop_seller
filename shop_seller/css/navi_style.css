@@ -1,0 +1,98 @@
+
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	list-style:		none; font-weight: 700; text-decoration: none; 
+	
+}
+
+.sf-menu {
+	line-height:	12px;
+}
+.sf-menu ul {
+	position:		absolute; 
+	top:			-999em;
+
+}
+	
+.sf-menu ul li {
+	width:			100%; 
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			36px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float:			left;
+	
+}.sf-menu li{
+
+	/*border-top:		1px solid #CFDEFF;*/}
+.sf-menu a {
+	
+	padding: 		12px 30px; 
+	border-left:	1px solid #006197;
+
+	text-decoration:none;
+}
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#13a;
+}
+.sf-menu {  margin:2px 0 0 16px;
+}
+.sf-menu li li {
+	background:		#117AD5; font-size:12px; border-top:1px solid #006197; font-weight:normal;
+}
+.sf-menu li li:hover {
+	background:		#7DCAE7;
+}.sf-menu li li:hover a:hover { color:#333;
+}
+.sf-menu li {
+	float:			left;
+	position:		relative; 
+}
+
+.sf-menu li:hover/*,.sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active */{ background-color:#117AD5;
+	/*background:url(../images/bg_over_but.jpg) top center repeat-x;*/
+	outline:		0;
+}
+
+.sf-menu a:link, .sf-menu a:active, .sf-menu a:hover, .sf-menu a:visited  {color: #FFF;}
+
+.sf-menu li li a {
+	
+	padding: 		8px 10px; width:165px;
+	border-left:	1px solid #006197;
+	text-decoration:none;
+}
